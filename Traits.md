@@ -16,3 +16,5 @@ D is constructed only once when constructing B. Linearization order is `CBDA'
 This can be confusing because vals in base classes are part of constructor code and are intitalized. lazy vals are too but the initialization is prevented by a boolean check.
 * var: No overrides allowed.
 * def: All except var can override
+
+> Interesting that vars are both in covaraint and contravariant positions in a class (getter and setter) so if overriding them was allowed it would have to invaraint and so there is no need (You can change the value aready)
